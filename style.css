@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+    
+/* BLOCO GERAL */
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+   max-width: 1280px;
+   margin: 0 auto;
+    
+}
+.flex{
+    display: flex;
+}
+
+
+
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600px;
+    background-color: yellow;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px yellow;
+    transform: scale(1.05);
+}
+
+h2.titulo{
+color: #fff;
+font-size: 34px;
+text-align: center;
+padding: 220px 0 100px 0;
+}
+
+h2.titulo span{
+    color: yellow;
+    
+}
+
+
+
+/* Estilo do cabeçalho */
+
+header .logo img, .logo-footer img{
+    width: 100px;
+    border-radius: 20px;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+header .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header h3, a{
+    color: #5c5c5c; 
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    margin-bottom: 0%;
+}
+
+header a:hover{
+    color: yellow;
+    transform: scale(1.05);
+    
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px yellow;
+}
+
+/* Topo do site */
+
+section.topo-do-site{
+    padding: 42px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    
+}
+
+.txt-topo-site {
+    color: #fff;
+}
+.txt-topo-site span{
+    color: yellow;
+}
+
+.txt-topo-site p{
+    margin: 40px 20px 40px 0;
+}
+
+.img-topo-site img{
+    max-width: 300px;
+    border-radius: 80px;
+    
+}
+
+ .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+.especialidades .flex{
+   gap: 60px;
+   display: flex;
+   text-align: center;
+
+}
+
+.especialidade .especialidade-box {
+    color: #fff;
+    padding: 80px;
+    border: 2px #fff;
+    margin-top: 85px;
+    margin-left: 120px;
+    border-radius: 20px;
+    transition: .2s;
+    padding-right: 100px;
+    text-align: center;
+    
+   
+}
+
+.especialidade .especialidade-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 100px yellow;
+}
+
+.especialidade .especialidade-box i {
+    font-size: 70px;
+    color: yellow;
+    text-align: center;
+    display: flex;
+    padding-left: 20px;
+    
+}
+
+.titulo h2{
+    margin-top: 400px;
+
+}
+
+.especialidade .especialidade-box h3{
+    font-size: 14px;
+    margin: 25px 0;
+    text-align: center;
+    display: block;
+    padding-left: 10px;
+}
+
+.unirios{
+    width: 220px;
+    padding: 40px;
+}
+
+.cetep{
+    width: 200px;
+    padding: 40px;
+
+}
+
+
+
+/* ESTILO DO SOBRE */
+
+.sobre{
+    padding: 80px 4%;
+}
+.img-sobre img{
+    width: 350px;
+    margin-top: 80px;
+    border-radius: 10px;
+    margin-bottom: 200px;
+    
+}
+
+section .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+
+.txt-sobre {
+    color: #fff;
+}
+
+.txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin: 100px 40px 50px 40px;
+}
+
+.txt-sobre p{
+    margin: 0px 40px;
+    text-align: justify;
+
+}
+
+.txt-sobre span{
+    color: yellow;
+    display: block;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: yellow;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 8PX 40px;
+    transition: .2s;
+}
+
+/* ESTILO DO PORTIFOLIO */
+
+section.portifolio{
+    padding: 40px 4%;
+}
+
+section.portifolio .flex{
+    justify-content: space-around;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    margin-top: 150px;
+    background-color: yellow;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000af;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+/* ESTILO DE FORMULARIO */
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #615f5fa6;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+form input::placeholder{
+    color: yellow;
+}
+
+form textarea::placeholder{
+    color: yellow;
+}
+
+
+form textarea{
+    resize: none;
+    height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 22px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: yellow;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* RODAPE */
+
+footer{
+    padding: 60px 8%;
+    box-shadow: 0 0 40px 10px rgb(170, 170, 82);
+    
+}
+
+
+footer .line-footer .btn-social{
+    padding-left: 850px;
+    
+}
+footer .line-footer .logo-footer{
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
+footer .line-footer{
+    padding: 20px 4%;
+   
+}
+
+.borda{
+    border-top: 2px solid yellow;
+    
+}
+
+footer .line-footer p i{
+    color: yellow;
+    font-size: 20px;
+    justify-content: flex-start ;
+}
+footer .line-footer p a{
+    color: white;
+}
+
+
+
+
+
+
